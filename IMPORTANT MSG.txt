@@ -1,0 +1,6 @@
+Inn codes mai mistakes hoskti hai(agr kisi ko mil jaye, wrna meri tarf sy tuo sab theek hai almost),
+iss mai basic/proper implementations hai, (woh functions include jo sir ny krwye),
+order:
+1. stack
+2. queue
+3. Linked list
