@@ -17,16 +17,16 @@ struct Node
 };
 
 template <typename T>
-class SinglyLinkedList
+class DoublyLinkedList
 {
     Node<T> *head{nullptr};
     Node<T> *tail{nullptr};
     int element{0};
 
 public:
-    SinglyLinkedList() {}
+    DoublyLinkedList() {}
 
-    SinglyLinkedList(const SinglyLinkedList &obj)
+    DoublyLinkedList(const DoublyLinkedList &obj)
     {
         Node<T> *temp = obj.head;
         while (temp)
@@ -36,7 +36,7 @@ public:
         }
     }
 
-    ~SinglyLinkedList()
+    ~DoublyLinkedList()
     {
         removeAll();
     }
@@ -161,7 +161,7 @@ public:
         return element;
     }
 
-    SinglyLinkedList &operator=(const SinglyLinkedList &obj)
+    DoublyLinkedList &operator=(const DoublyLinkedList &obj)
     {
         if (this != &obj)
         {
@@ -196,7 +196,7 @@ public:
         return temp->data;
     }
 
-    friend ostream &operator<<(ostream &os, const SinglyLinkedList &obj)
+    friend ostream &operator<<(ostream &os, const DoublyLinkedList &obj)
     {
         Node<T> *temp = obj.head;
         while (temp)
